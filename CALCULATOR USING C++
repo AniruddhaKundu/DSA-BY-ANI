@@ -1,0 +1,63 @@
+/*Calculator using c++ using function*/
+#include <iostream>
+using namespace std;
+void addition();
+void substraction();
+void multiplication();
+void division();
+void Modulus();
+int main(){
+    char ch;
+    cout<<"Your favourite operations are :\n\t1. + for Addition\n\t2. - for Subtraction\n\t3. * for Multiplication\n\t4. / for Division\n\t5. % for Modulus"<<endl;   
+    cout<<"Enter Your favourite Operation to perform"<<endl;
+    cin>>ch;
+    switch(ch){
+        case '+':
+        	addition();
+        	break;
+        case '-':
+            substraction();
+            break;
+        case '*':
+        	multiplication();
+            break;
+        case '/':
+        	division();
+            break;
+        case '%':
+            Modulus();
+            break;
+        default :
+        	cout<<"Please enter a valid operator"<<endl;
+    }
+}
+void addition(){
+    int a,b;
+    cout<<"Enter Two Number"<<endl;
+    cin>>a>>b;
+    cout<<"The addition of a and b is = "<<(a+b)<<endl;
+}
+void substraction(){
+    int a,b;
+    cout<<"Enter two Number"<<endl;
+    cin>>a>>b;
+    cout<<"The substarction of a and b is = "<<(a-b)<<endl;
+}
+void multiplication(){
+    int a,b;
+    cout<<"Enter Two Number"<<endl;
+    cin>>a>>b;
+    cout<<"The multiplication of a and b is = "<<(a*b)<<endl;
+}
+void division(){
+    int a,b;
+    cout<<"Enter two Number"<<endl;
+    cin>>a>>b;
+    cout<<"The Division of two number is = "<<(a/b)<<endl;
+}
+void Modulus(){
+    int a,b;
+    cout<<"Enter two Number"<<endl;
+    cin>>a>>b;
+    cout<<"The modulus of a and b is = "<<(a%b)<<endl;
+}
