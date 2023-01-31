@@ -1,0 +1,30 @@
+#include<stdio.h>
+int linear(int a[],int n,int val){
+	int i;
+	for(i=0;i<n;i++){
+		if(a[i]==val){
+			return i;
+		}
+	}
+	return -1;
+}
+int main(){
+	int i,j,temp;
+	int a[5]={10,20,40,60,80};
+	int val = 40;
+	int n = sizeof(a)/sizeof(a[0]);
+	int res = linear(a,n,val);
+	printf("The Elements are present in array are:- \n");
+	for(i=0;i<n;i++){
+		printf("%d ",a[i]);
+	}
+	printf("\n");
+	printf("The item to be searched in the list:- %d\n",val);
+	if(res==-1){
+		printf("item is not present in the list\n");
+	}
+	else{
+		printf("Item is present at the %d location", res);
+	}
+	return 0;
+}
